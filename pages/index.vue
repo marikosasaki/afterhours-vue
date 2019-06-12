@@ -1,33 +1,32 @@
 <template>
-  <div class="top">
-    <div class="top-view">
-        <section class="hero">
-          <h1 class="title fede-in--deley1">MARIKO SASAKI</h1>
-          <p class="fede-in--deley2">about my work</p>
-          <ul class="work-list row">
-            <li class="col-lg-4 fade-in-item">
-              <img src="~assets/image/portfolio-1.jpg">
-            </li>
-            <li class="col-lg-4 fade-in-item">
-              <img src="~assets/image/portfolio-1.jpg">
-            </li>
-            <li class="col-lg-4 fade-in-item">
-              <img src="~assets/image/portfolio-1.jpg">
-            </li>
-          </ul>
-        </section>
+  <div>
+    <div class="top">
+      <div class="top-view">
+          <section class="hero">
+            <h1 class="title fede-in--deley1">MARIKO SASAKI</h1>
+            <p class="fede-in--deley2">about my work</p>
+          </section>
+      </div>
     </div>
+    <work-list v-bind:style="style" />
   </div>
 </template>
 
 <script>
-//import Logo from "~/components/Logo.vue";
+import WorkList from "~/components/WorkList.vue";
+
 
 export default {
-  // components: {
-  //   Logo
-  // }
-
+  components: {
+     WorkList
+  },
+  data () {
+    return {
+       style : {
+         margin: '-50px 0 0 0'
+      }
+    }
+  }
 };
 </script>
 
@@ -38,18 +37,12 @@ export default {
     padding: 40px 0 0px 0;
     background-repeat: no-repeat;
     text-align: center;
-    max-height: 50vh;
-    margin: 0px 0 100px;
   }
   .top-view {
-    margin-top: 200px;
-  }
-  .hero {
-
+    margin: 200px 0 0px 0;
+    padding-bottom: 100px;
   }
   .title {
     opacity: 0;
   }
-
-
 </style>

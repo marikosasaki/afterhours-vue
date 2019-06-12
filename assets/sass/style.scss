@@ -39,6 +39,21 @@
   padding-top: 15px;
 }
 
+.global-menu__container {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 25rem;
+
+  .global-menu__ttl {
+    margin: 0 0 10px 0;
+  }
+}
 .global-menu {
   display: none;
   position: fixed;
@@ -150,7 +165,7 @@
 }
 
 .work-list {
-  margin: 100px 0 100px 0;
+
   li {
     padding: 0;
     opacity: 0;
@@ -189,6 +204,5 @@ animation: fede-in 1s ease 2.5s 1 forwards;
 -webkit-animation: fede-in 0.5s ease 3s 1 forwards;
 animation: fede-in 1s ease 3s 1 forwards;
 }
-
 
 
