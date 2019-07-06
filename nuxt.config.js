@@ -45,10 +45,9 @@ export default {
      //'~/assets/sass/foundation/mixin/_index.scss'
      ]
   },
-
-  router: {
-    base: '/afterhours-vue/'
-  },
+   router: {
+    base: '/<repository-name>/'
+  }
 
   /*
   ** Build configuration
