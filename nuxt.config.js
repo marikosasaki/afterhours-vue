@@ -46,8 +46,8 @@ export default {
      ]
   },
    router: {
-    base: '/<repository-name>/'
-  }
+    base: '/afterhours-vue/'
+  },
 
   /*
   ** Build configuration
