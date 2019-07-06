@@ -47,7 +47,7 @@ export default {
   },
    router: {
     base: '/<repository-name>/'
-  }
+  },
 
   /*
   ** Build configuration
