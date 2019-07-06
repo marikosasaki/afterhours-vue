@@ -1,5 +1,5 @@
 <template>
-  <h1 class="fede-in header-title">about my work</h1>
+  <h1 class="fede-in--deley1 header-title">about my work</h1>
 </template>
 
 

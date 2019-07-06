@@ -1,15 +1,20 @@
 @import "~~/node_modules/bootstrap/scss/bootstrap.scss";
+//@import "https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 
 body {
   background-color: #212529;
   font-family: 'Varela Round', sans-serif;
+
+  a {
+    color: #a1a9b0;
+  }
 }
 
 .header-container {
   background-color: #212529;
 }
 footer {
-  padding: 150px 0 0 0px;
+  padding: 10% 0 0 0px;
   text-align: center;
   .footer-list {
     margin: 0 0 50px 0;
@@ -17,9 +22,6 @@ footer {
       display: inline-block;
       padding: 0 10px;
 
-      a {
-        color: #a1a9b0;
-      }
     }
   }
   .copy {
@@ -74,10 +76,29 @@ ul {
   transform: translate(-30px, 0);
 }
 
-.fede-in {
-  -webkit-animation: fede-in 1s ease 1s 1 forwards;
-  animation: fede-in 1s ease 1s 1 forwards;
+@for $i from 1 through 5 {
+  .bounce-in#{$i} {
+    -webkit-animation: bounce-in 1s ease 1 forwards;
+    animation: bounce-in 1s ease 1 forwards;
+    @if $i == 1 {
+      animation-delay: 0.5s;
+    } @else if $i  == 2 {
+      animation-delay: 1s;
+    } @else if $i  == 3 {
+      animation-delay: 1.5s;
+    } @else if $i  == 4 {
+      animation-delay: 2s;
+    } @else if $i  == 5 {
+      animation-delay: 2.5s;
+    }
+  }
 }
+
+.bounce-in {
+  -webkit-animation: bounce-in 1s ease 0.5s 1 forwards;
+  animation: bounce-in 1s ease 0.5s 1 forwards;
+}
+
 .fede-in--deley1 {
   -webkit-animation: fede-in 1s ease 2s 1 forwards;
   animation: fede-in 1s ease 2s 1 forwards;
@@ -87,6 +108,7 @@ ul {
   -webkit-animation: fede-in 1s ease 2.5s 1 forwards;
   animation: fede-in 1s ease 2.5s 1 forwards;
 }
+
 
 @-webkit-keyframes fede-in {
   100% {

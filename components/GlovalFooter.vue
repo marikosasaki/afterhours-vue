@@ -14,6 +14,9 @@
               <li v-on:click="menu">
                   <nuxt-link to="work">work</nuxt-link>
               </li>
+              <li v-on:click="menu">
+                  <nuxt-link to="work">blog</nuxt-link>
+              </li>
             </ul>
             <p class="copy">© 2019 · Mariko Sasaki · All Rights Reserved</p>
           </div>
@@ -25,7 +28,6 @@
 <script>
 
 export default {
-
   data () {
     return {
       isActive: false,
