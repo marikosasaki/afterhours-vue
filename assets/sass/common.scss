@@ -7,6 +7,12 @@ body {
 
   a {
     color: #a1a9b0;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      color: #a1a9b0;
+    }
   }
 }
 

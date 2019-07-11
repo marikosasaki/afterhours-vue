@@ -209,4 +209,25 @@ animation: fede-in 1s ease 2.5s 1 forwards;
 animation: fede-in 1s ease 3s 1 forwards;
 }
 
+.hover1 {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+.hover1::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #2196F3;
+  transition: all 0.3s ease 0s;
+}
+.hover1:hover {
+  cursor: pointer;
+}
+.hover1:hover::after {
+  width: 100%;
+}
 

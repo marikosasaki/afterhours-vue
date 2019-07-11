@@ -6,16 +6,16 @@
           <div class="col-md-12">
             <ul class="footer-list">
               <li v-on:click="menu" class="">
-                <nuxt-link to="/">top</nuxt-link>
+                <nuxt-link to="/" class="hover1">top</nuxt-link>
               </li>
               <li v-on:click="menu">
-                  <nuxt-link to="about">about</nuxt-link>
+                  <nuxt-link to="about" class="hover1">about</nuxt-link>
               </li>
               <li v-on:click="menu">
-                  <nuxt-link to="work">work</nuxt-link>
+                  <nuxt-link to="work" class="hover1">work</nuxt-link>
               </li>
               <li v-on:click="menu">
-                  <nuxt-link to="work">blog</nuxt-link>
+                  <a href="http://maru-site.boy.jp/" class="hover1">blog</a>
               </li>
             </ul>
             <p class="copy">© 2019 · Mariko Sasaki · All Rights Reserved</p>

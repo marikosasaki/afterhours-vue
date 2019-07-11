@@ -11,16 +11,16 @@
           <nav>
             <ul class="menu-list">
               <li v-on:click="menu" class="bounce-in1">
-                <nuxt-link to="/">top</nuxt-link>
+                <nuxt-link to="/" class="hover1">top</nuxt-link>
               </li>
               <li v-on:click="menu" class="bounce-in2">
-                 <nuxt-link to="about" >about</nuxt-link>
+                 <nuxt-link to="about" class="hover1">about</nuxt-link>
               </li>
               <li v-on:click="menu" class="bounce-in3">
-                 <nuxt-link to="work" >work</nuxt-link>
+                 <nuxt-link to="work" class="hover1">work</nuxt-link>
               </li>
               <li v-on:click="menu" class="bounce-in4">
-                 <nuxt-link to="blog">blog</nuxt-link>
+                <a href="http://maru-site.boy.jp/" class="hover1" ttarget _blank>blog</a>
               </li>
             </ul>
           </nav>
