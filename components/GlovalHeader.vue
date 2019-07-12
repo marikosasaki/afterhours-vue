@@ -11,7 +11,7 @@
           <nav>
             <ul class="menu-list">
               <li v-on:click="menu" class="bounce-in1">
-                <nuxt-link to="/" class="hover1">top</nuxt-link>
+                <nuxt-link to="/">top</nuxt-link>
               </li>
               <li v-on:click="menu" class="bounce-in2">
                  <nuxt-link to="about" class="hover1">about</nuxt-link>
