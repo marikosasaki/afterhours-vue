@@ -14,12 +14,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.1/css/all.css' }
     ],
-
     script: [
-      {src: "//cdn.kaizenplatform.net/s/ef/a4aaad45e99c11.js?kz_namespace=kzs", charset:"utf-8" }
+      {src: "//cdn.kaizenplatform.net/s/ef/a4aaad45e99c11.js?kz_namespace=kzs"}
     ]
-
-
   },
   /*
   ** Customize the progress-bar color
